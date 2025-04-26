@@ -210,6 +210,22 @@ impl Board {
         
         Some((row, col, value))
     }
+    
+    pub fn get_cell_value(&self, row: usize, col: usize) -> u8 {
+        if row < SIZE && col < SIZE {
+            self.cells[row][col].value
+        } else {
+            0
+        }
+    }
+    
+    pub fn is_correct_value(&self, row: usize, col: usize, value: u8) -> bool {
+        if row < SIZE && col < SIZE {
+            self.solution[row][col] == value
+        } else {
+            false
+        }
+    }
 }
 
 impl fmt::Display for Board {
