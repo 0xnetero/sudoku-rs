@@ -17,7 +17,7 @@ Make sure you have Rust and Cargo installed. If not, you can install them from [
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/sudoku-rs.git
+git clone https://github.com/0xNetero/sudoku-rs.git
 cd sudoku-rs
 
 # Build and run the game
